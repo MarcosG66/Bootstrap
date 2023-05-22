@@ -5,60 +5,79 @@
 h1 {
     text-align: center;
     font-weight: bold;
-    font-size: 90px;
-    transform: translate(0px, 30px);
+    font-size: 45px;
+    position: relative;
+    margin-top: 60px;
+
 
 }
 
+
 .carousel-inner {
-    position:relative;
+    position: sticky;
 }
 
 .botao {
-    position:absolute;
-    height: 100px;
-    width: 900px;
-    font-size: 40px;
+    position:relative;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
     background-color: rgb(0, 3, 43);
-    font-weight: bold;
+    font-weight: 700;
     color: rgb(255, 255, 255);
     
 }
 
-.button button:hover {
-    color: white;
-    background: linear-gradient(rgb(72, 223, 34),rgb(198, 223, 34));
+
+
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+.btn-primary {
+    color: #fff;
+    background: rgb(0, 3, 43);
+    border:0;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+    
+
+}
+.btn-primary:hover {
+    color: #fff;
+    background: linear-gradient(rgb(72, 223, 34),rgb(198, 223, 34));;
+    border:0;
+    border-radius: 10px;
     transition: 0.5s;
 }
 
-.button button:active {
-    color: white;
-    background: linear-gradient(rgb(72, 223, 34),rgb(198, 223, 34));
+.btn-primary:not(:hover) {
+    color: #fff;
+    background: rgb(0, 3, 43);;
+    border:0;
+    border-radius: 10px;
     transition: 0.5s;
 }
 
-.button button:not(:active) {
-    transition: 0.5s;
-}
 
-.button button:not(:hover){
- transition: 0.5s;   
-}
-
-.button {
-    justify-content: center;
-    width: 360px;
+.button-Sign {
     text-align: center;
-    margin-top: 800px;
+    margin: 20px 0;
 
 }
 
-.button button a{
+.button-Sign button a{
     text-decoration: none;
     color: white;
 }
 
+.desc{
+    align-items: center;
+    
+}
 .desc h2{
     text-align: center;
-    font-size: 90px;
+    font-size: 20px;
+}
+
+footer {
+    background: none;
 }
